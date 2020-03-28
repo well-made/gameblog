@@ -1,0 +1,48 @@
+/***
+* Pre-defined font mixins
+***/
+
+@mixin font-primary {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin font-secondary {
+    font-family: 'Roboto Slab', serif;
+}
+
+/***
+* Pre-defined typography
+***/
+
+html, body {
+    @include font-secondary();
+    font-size: 16px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    @include font-primary();
+}
+
+h1, .h1 {
+    text-transform: uppercase;
+}
+
+h2, .h2 {
+    text-transform: uppercase;
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+    
+}
+
+h6, .h6 {
+
+}
