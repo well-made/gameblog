@@ -1,0 +1,48 @@
+.game-item {
+    background: $accent;
+    position: relative;
+    margin: 0 0 3px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &::before {
+        content: "";
+        @include position();
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.25) 1%, rgba(0,0,0,0.75) 100%);
+    }
+    
+    a {
+        color: $white;
+        display: block;
+        position: relative;
+        z-index: 2;
+        padding: 25px 15px;
+    }
+
+    &__title {
+        position: relative;
+        padding: 0 0 15px;
+        margin: 0;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 30px;
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            background: $accent;
+        }
+    }
+
+    &__revisited {
+        color: $accent;
+    }
+
+    &__summary {
+        margin: 0;
+    }
+}
