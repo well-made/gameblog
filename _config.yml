@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "gaming.well-made.nl" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: spitfire_gaming
 github_username:  well-made
+permalink: /games/:title/
 
 # Build settings
 plugins:
