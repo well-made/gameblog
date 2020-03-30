@@ -2,6 +2,16 @@
 layout: default
 ---
 
+{% assign heros = site.posts | where: 'hero', true %}
+{% assign games = site.posts | where: 'hero', nill %}
+
 <div class="container">
-  <h1>Test</h1>
+  {% for hero in heros %}
+    {%- include games/hero.html -%}
+  {% endfor %}
+  <div class="game-list">
+    {% for game in games %}
+      {%- include games/game.html -%}
+    {% endfor %}
+  </div>
 </div>
