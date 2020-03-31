@@ -1,7 +1,22 @@
 .hero {
-    padding: 40px 15px;
+    margin: 0 -15px;
+
+    &__content {
+
+    }
+
+    &__title {
+
+    }
+
+    &__summary {
+
+    }
 
     a {
         color: $white;
+        display: block;
+        min-height: 90vh;
+        padding: 40px 15px;
     }
 }

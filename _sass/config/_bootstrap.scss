@@ -2,7 +2,9 @@
 * Overwrite bootstrap variables
 ***/
 
-// 
+$theme-colors: (
+        "primary": $accent
+);
 
 /***
 * Only import required bootstrap files

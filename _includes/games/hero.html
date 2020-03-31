@@ -1,7 +1,9 @@
 <article class="hero">
-    <a href="{{ hero.url }}">
-        <strong class="h3">{{ hero.title }}{% if hero.revisited == true %} <i>R</i>{% endif %}</strong>
-        <p>{{ hero.summary }}</p>
-        <span class="btn btn-primary">Read review</span>
+    <a href="{{ hero.url }}" class="d-flex flex-row align-items-end">
+        <div class="hero__content flex-fill">
+            <strong class="h1 hero__title">{{ hero.title }}{% if hero.revisited == true %} <i>R</i>{% endif %}</strong>
+            <p class="hero__summary">{{ hero.summary }}</p>
+            <span class="btn btn-primary">Read review</span>
+        </div>
     </a>
 </article>
