@@ -2,11 +2,11 @@
 // Mixin for easy positioning
 // All variables are optional
 
-@mixin position($position: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0, $z-index: 1) {
-    position: $position;
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-    z-index: $z-index;
-  }
+@mixin position($position: relative, $top: auto, $right: auto, $bottom: auto, $left: auto, $z-index: unset) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
