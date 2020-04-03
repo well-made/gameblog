@@ -1,6 +1,6 @@
-<article class="hero">
+<article class="hero" style="background-image: url('{{ hero.image }}')">
     <a href="{{ hero.url }}" class="d-flex flex-row align-items-end">
-        <div class="hero__content flex-fill">
+        <div class="hero__content flex-fill container">
             <strong class="h1 hero__title">{{ hero.title }}{% if hero.revisited == true %} <i>R</i>{% endif %}</strong>
             <p class="hero__summary">{{ hero.summary }}</p>
             <span class="btn btn-primary">Read review</span>

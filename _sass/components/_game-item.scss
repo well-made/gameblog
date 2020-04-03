@@ -1,5 +1,7 @@
 .game-item {
-    background: $accent;
+    background-color: #444444;
+    background-size: cover;
+    background-position: center;
     position: relative;
     margin: 3px 0 0;
 
@@ -14,7 +16,7 @@
         display: block;
         position: relative;
         z-index: 2;
-        padding: 25px 15px;
+        padding: 25px 0;
     }
 
     &__title {

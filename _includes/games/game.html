@@ -1,6 +1,8 @@
-<article class="game-item">
+<article class="game-item" style="background-image: url('{{game.image}}');">
     <a href="{{ game.url }}">
-        <strong class="game-item__title h3">{{ game.title }}{% if game.revisited == true %} <i class="game-item__revisited">R</i>{% endif %}</strong>
-        <p class="game-item__summary">{{ game.summary }}</p>
+        <div class="container">
+            <strong class="game-item__title h3">{{ game.title }}{% if game.revisited == true %} <i class="game-item__revisited fa fa-fw fa-sync"></i>{% endif %}</strong>
+            <p class="game-item__summary">{{ game.summary }}</p>
+        </div>
     </a>
 </article>
