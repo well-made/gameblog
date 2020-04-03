@@ -3,5 +3,6 @@ layout: post
 title:  "Chasm"
 date:   2020-03-30 01:00:00 +0100
 summary: Cute little metroidvania platformer
+image: https://steamcdn-a.akamaihd.net/steam/apps/312200/ss_b8188c73207d5056a7aa7111a4ea8ced4116b48e.1920x1080.jpg?t=1578514982
 ---
 
