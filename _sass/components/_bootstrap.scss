@@ -1,0 +1,19 @@
+/***
+* Additional Bootstrap element styling
+***/
+
+.btn {
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px 40px;
+    line-height: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.badge {
+    font-size: 50%;
+    @include font-secondary();
+    font-weight: normal;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+}
