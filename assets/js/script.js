@@ -32,6 +32,15 @@ var wellMadeGameBlog = (function($, window, undefined) {
             }
         });
 
+        /**
+         * Toggle navigation
+         * Toggles body class
+         */
+
+         $('.page-header__nav-toggle').click(function(){
+            body.toggleClass('nav--visible');
+         });
+
     };
 
     /**
