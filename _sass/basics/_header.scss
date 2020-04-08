@@ -10,6 +10,27 @@
     &__logo {
         padding: 15px 0;
         display: block;
+
+        @include media-breakpoint-up(lg) {
+            background: $black;
+            padding: 20px 40px 20px 0;
+            position: relative;
+
+            &::before {
+                content: '';
+                @include position(absolute, 0, 100%, 0, -50vw, 0);
+                background: $black;
+                width: 50vw;
+            }
+        }
+
+        &-img {
+            height: 30px;
+
+            @include media-breakpoint-up(lg) {
+                height: 45px;
+            }
+        }
     }
 
     &__nav-toggle {

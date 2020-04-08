@@ -8,6 +8,7 @@
     min-height: 140px;
 
     @include media-breakpoint-up(lg) {
+        min-height: 200px;
         margin: 0;
     }
 
@@ -16,20 +17,37 @@
         @include position(absolute, 0, 0, 0, 0);
         background-image: linear-gradient(180deg, rgba(0,0,0,0.25) 1%, rgba(0,0,0,0.75) 100%);
     }
+
+    &:hover {
+        .game-item {
+            &__title {
+                &::before {
+                    width: 100%;
+                    transition: $transition;
+                }
+            }
+        }
+    }
     
     a {
         color: $white;
         display: block;
         position: relative;
         z-index: 2;
-        padding: 25px 0;
+        padding: 30px 15px;
         flex: 1;
+        text-decoration: none;
+
+        @include media-breakpoint-up(lg) {
+            padding: 30px;
+        }
     }
 
     &__title {
         position: relative;
         padding: 0 0 15px;
         margin: 0;
+        float: left;
 
         &::before {
             content: "";
@@ -40,6 +58,7 @@
             bottom: 6px;
             left: 0;
             background: $accent;
+            transition: $transition;
         }
     }
 
@@ -49,5 +68,6 @@
 
     &__summary {
         margin: 0;
+        clear: both;
     }
 }

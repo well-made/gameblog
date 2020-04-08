@@ -5,13 +5,22 @@ layout: default
   <h1>{{ page.title }}</h1>
 </div>
 
-<div class="PageNavigation">
-  {% if page.previous.url %}
-    {% assign game = page.previous %}
-    {%- include games/game.html -%}
-  {% endif %}
-  {% if page.next.url %}
-    {% assign game = page.next %}
-    {%- include games/game.html -%}
-  {% endif %}
+<div class="container">
+  <div class="recent-games">
+    <h2 class="d-none d-sm-block">Other reviews</h2>
+    <div class="row">
+      {% if page.previous.url %}
+        <div class="col{% if page.next.url %}-lg-6{% endif %} d-flex">
+          {% assign game = page.previous %}
+          {%- include games/game.html -%}
+        </div>
+      {% endif %}
+      {% if page.next.url %}
+        <div class="col{% if page.prev.url %}-lg-6{% endif %} d-flex">
+          {% assign game = page.next %}
+          {%- include games/game.html -%}
+        </div>
+      {% endif %}
+    </div>
+  </div>
 </div>

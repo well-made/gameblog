@@ -5,4 +5,8 @@
     @include media-breakpoint-up(sm) {
         margin: 80px 0;
     }
+
+    &__title {
+        @include font-secondary();
+    }
 }

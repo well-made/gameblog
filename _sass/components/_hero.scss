@@ -23,6 +23,10 @@
 
     &__summary {
         text-shadow: 0 0 10px rgba(0,0,0,0.50);
+    
+        @include media-breakpoint-up(md) {
+            font-size: 36px;
+        }
     }
 
     a {
@@ -30,5 +34,10 @@
         display: block;
         min-height: 80vh;
         padding: 40px 0;
+        text-decoration: none;
+
+        @include media-breakpoint-up(sm) {
+            min-height: 60vh;
+        }
     }
 }

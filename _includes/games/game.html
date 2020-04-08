@@ -1,13 +1,11 @@
-<article class="game-item d-flex" style="background-image: url('{{game.image}}');">
-    <a href="{{ game.url }}">
-        <div class="container">
-            <strong class="game-item__title h3">
-                {{ game.title }}
-                {% if game.revisited == true %}
-                    <span class="badge badge-primary">Revisited</span>
-                {% endif %}
-            </strong>
-            <p class="game-item__summary">{{ game.summary }}</p>
-        </div>
+<article class="game-item d-flex align-items-center align-items-lg-end" style="background-image: url('{{game.image}}');">
+    <a href="{{ game.url }}" title="Read the review">
+        <strong class="game-item__title h3">
+            {{ game.title }}
+        </strong>
+        {% if game.revisited == true %}
+            <span class="game-item__badge badge badge-primary">Revisited</span>
+        {% endif %}
+        <p class="game-item__summary">{{ game.summary }}</p>
     </a>
 </article>
