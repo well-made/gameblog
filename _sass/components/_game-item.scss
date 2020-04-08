@@ -4,6 +4,12 @@
     background-position: center;
     position: relative;
     margin: 3px 0 0;
+    flex: 1;
+    min-height: 140px;
+
+    @include media-breakpoint-up(lg) {
+        margin: 0;
+    }
 
     &::before {
         content: "";
@@ -17,6 +23,7 @@
         position: relative;
         z-index: 2;
         padding: 25px 0;
+        flex: 1;
     }
 
     &__title {

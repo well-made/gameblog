@@ -6,8 +6,15 @@ layout: default
 
 {%- include games/hero.html -%}
 
-<div class="game-list">
-  {% for game in site.posts offset:1 %}
-    {%- include games/game.html -%}
-  {% endfor %}
+<div class="container">
+  <div class="recent-games">
+    <h2 class="d-none d-sm-block">Latest reviews</h2>
+    <div class="row">
+      {% for game in site.posts offset:1 %}
+        <div class="col-lg-4 d-flex">
+          {%- include games/game.html -%}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
