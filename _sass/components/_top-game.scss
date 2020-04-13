@@ -1,0 +1,32 @@
+.top-game {
+    width: 200px;
+    float: left;
+
+    &:hover {
+        .top-game__position {
+            opacity: 1;
+            transition: $transition;
+        }
+    }
+
+    a {
+        display: block;
+        position: relative;
+        padding: 0 0 0 100px;
+    }
+
+    &__position {
+        @include position(absolute, 0, 25%, 0, 0, 1);
+        text-align: center;
+        @include font-primary();
+        color: $white;
+        font-size: 128px;
+        opacity: 0.25;
+        line-height: 150px;
+        transition: $transition;
+    }
+
+    &__img {
+        @include position(relative, 0, 0, 0, 0, 2);
+    }
+}

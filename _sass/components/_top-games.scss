@@ -1,0 +1,21 @@
+.top-games {
+    overflow: hidden;
+
+    @include media-breakpoint-up(sm) {
+        margin: 80px 0;
+    }
+
+    &__title {
+        @include font-secondary();
+    }
+
+    &__list-wrapper {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    &__list {
+        overflow: hidden;
+        width: 2000px;
+    }
+}
