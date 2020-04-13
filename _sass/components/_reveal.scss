@@ -1,0 +1,49 @@
+.reveal__holder {
+    position: relative;
+    display: inline-block;
+    // overflow: hidden;
+
+    [data-aos="reveal--right"] {
+        transform: scaleX(1);
+        transform-origin: 100% 0%;
+        transition-property: transform;
+        transition-delay: 0.5s;
+        transition-duration: 0.5s;
+
+        &.aos-animate {
+            transform: scaleX(0);
+        }
+    }
+}
+
+.reveal__block {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 101%;
+    background: $black;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $accent;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+
+    &.right {
+        &::before {
+            transform: scaleX(0);
+            transform-origin: 0% 100%;
+        }
+
+        &.aos-animate::before {
+            transform: scaleX(1);
+        }
+    }
+}

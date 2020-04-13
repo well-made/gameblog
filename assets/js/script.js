@@ -19,6 +19,14 @@ var wellMadeGameBlog = (function($, window, undefined) {
          body = $('body');
 
         /**
+         * Animate On Scroll
+         */
+
+        // AOS.init({
+        //     once: true
+        // });
+
+        /**
          * Change body class for header on scroll
          */
 

@@ -43,6 +43,10 @@
         }
     }
 
+    &__content {
+        display: block;
+    }
+
     &__title {
         position: relative;
         padding: 0 0 15px;
