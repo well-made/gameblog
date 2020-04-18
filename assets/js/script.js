@@ -22,9 +22,9 @@ var wellMadeGameBlog = (function($, window, undefined) {
          * Animate On Scroll
          */
 
-        // AOS.init({
-        //     once: true
-        // });
+        AOS.init({
+            once: true
+        });
 
         /**
          * Change body class for header on scroll
