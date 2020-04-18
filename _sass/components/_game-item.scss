@@ -20,7 +20,7 @@
 
     &:hover {
         .game-item {
-            &__title {
+            &__summary {
                 &::before {
                     width: 100%;
                     transition: $transition;
@@ -48,9 +48,18 @@
     }
 
     &__title {
-        position: relative;
-        padding: 0 0 15px;
         margin: 0;
+    }
+
+    &__badge {
+        margin: 0 0 5px;
+    }
+
+    &__summary {
+        position: relative;
+        margin: 0;
+        clear: both;
+        padding: 0 0 15px;
         float: left;
 
         &::before {
@@ -64,14 +73,5 @@
             background: $accent;
             transition: $transition;
         }
-    }
-
-    &__revisited {
-        color: $accent;
-    }
-
-    &__summary {
-        margin: 0;
-        clear: both;
     }
 }
