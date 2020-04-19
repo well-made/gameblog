@@ -54,6 +54,7 @@
 
         @include media-breakpoint-up(sm) {
             height: 70vh;
+            max-height: 650px;
         }
     }
 }

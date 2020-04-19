@@ -11,7 +11,7 @@
         padding: 15px 0;
         display: block;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(md) {
             background: $black;
             padding: 20px 40px 20px 0;
             position: relative;
@@ -27,9 +27,21 @@
         &-img {
             height: 30px;
 
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(md) {
                 height: 45px;
             }
+        }
+    }
+
+    &__nav-holder {
+        float: right;
+        position: relative;
+
+        &::after {
+            content: '';
+            @include position(absolute, 0, -50%, 0, 100%, 0);
+            background: $black;
+            width: 50vw;
         }
     }
 

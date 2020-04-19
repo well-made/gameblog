@@ -4,10 +4,12 @@
             <img class="page-header__logo-img" src="/assets/images/logo.png" alt="{{ site.title }}" title="{{ site.title }}"/>
         </a>
 
-        <button class="page-header__nav-toggle float-right">
+        <div class="page-header__nav-holder">
+            {%- include navigation.html -%}
+        </div>
+
+        <button class="page-header__nav-toggle float-right d-block d-md-none">
             <span class="page-header__nav-toggle-bars"></span>
         </button>
     </div>
 </header>
-
-{%- include navigation.html -%}

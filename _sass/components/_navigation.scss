@@ -1,9 +1,14 @@
 .nav {
-    @include position(fixed, -100%, 0, 100%, 0, 8);
     background: $black;
     overflow: hidden;
     transition: $transition;
     padding: 60px 0;
+    @include position(fixed, -100%, 0, 100%, 0, 8);
+
+    @include media-breakpoint-up(md) {
+        padding: 20px 0;
+        @include position(relative, auto, auto, auto, auto);
+    }
 
     body.nav--visible & {
         top: 0;
@@ -14,6 +19,10 @@
     &__list {
         margin: 0;
 
+        @include media-breakpoint-up(md) {
+            float: left;
+        }
+
         &--social {
             text-align: center;
 
@@ -23,13 +32,19 @@
         }
     }
 
+    &__List-item {
+        @include media-breakpoint-up(md) {
+            float: left;
+        }
+    }
+
     &__item {
         @include font-primary;
         text-transform: uppercase;
         color: $white;
         display: block;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 15px;
 
         &--social {
             padding: 10px;

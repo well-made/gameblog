@@ -4,14 +4,14 @@
             {% assign sorted_pages = site.pages | sort:"order" %}
             {% for node in sorted_pages %}
                 {% if 'navigation' == null or 'navigation' == node.group %}
-                    <li><a class="nav__item{% if page.url == node.url %} nav__item--active{% endif %}" href="#">{{node.title}}</a></li>
+                    <li class="nav__List-item"><a class="nav__item{% if page.url == node.url %} nav__item--active{% endif %}" href="#">{{node.title}}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
         <ul class="list-unstyled nav__list nav__list--social">
-            <li><a class="nav__item nav__item--social" href="#"><i class="fab fa-steam"></i></a></li>
-            <li><a class="nav__item nav__item--social" href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a class="nav__item nav__item--social" href="#"><i class="fab fa-twitch"></i></a></li>
+            <li class="nav__List-item"><a class="nav__item nav__item--social" href="#"><i class="fab fa-steam"></i></a></li>
+            <li class="nav__List-item"><a class="nav__item nav__item--social" href="#"><i class="fab fa-youtube"></i></a></li>
+            <li class="nav__List-item"><a class="nav__item nav__item--social" href="#"><i class="fab fa-twitch"></i></a></li>
         </ul>
     </div>
 </div>
