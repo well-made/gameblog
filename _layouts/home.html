@@ -10,8 +10,14 @@ layout: default
 <div class="container">
   <div class="recent-games">
     <div class="row">
-      {% for game in site.posts offset:1 limit:2 %}
-        <div class="col-lg-6 d-flex">
+      {% for game in site.posts offset:1 limit:5 %}
+        {% capture modulus %}{{ forloop.index | modulo:3 }}{% endcapture %}
+        {% if modulus == "0" %}
+          {% assign class = 'col-12' %}
+        {% else %}
+          {% assign class = 'col-lg-6' %}
+        {% endif %}
+        <div class="{{ class }} d-flex">
           {%- include partials/game/item.html -%}
         </div>
       {% endfor %}
@@ -20,7 +26,7 @@ layout: default
 </div>
 
 <!-- Top Games -->
-{% assign topgames = site.posts | where_exp: "game", "game.top != nil" | sort: "top" %}
+<!-- {% assign topgames = site.posts | where_exp: "game", "game.top != nil" | sort: "top" %}
 {% if (topgames | size < 0) %}
   <div class="container">
     <div class="top-games">
@@ -34,4 +40,4 @@ layout: default
       </div>
     </div>
   </div>
-{% endif %}
+{% endif %} -->

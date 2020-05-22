@@ -3,7 +3,12 @@
     background-color: #444444;
     background-size: cover;
     background-position: center;
-    padding: 30px;
+    margin: 0 -15px;
+    min-height: 60vh;
+    
+    @include media-breakpoint-up(sm) {
+        margin: 0 0 30px;
+    }
 
     &::before {
         content: "";
@@ -23,6 +28,19 @@
         @include position(absolute, 0, 0, 0, 0, 1);
         background: $black;
         opacity: 0.2;
+    }
+
+    &__wrapper {
+        color: $white !important;
+        display: block;
+        text-decoration: none;
+        position: relative;
+        z-index: 3;
+        padding: 30px 15px;
+
+        @include media-breakpoint-up(sm) {
+            padding: 120px 60px;
+        }
     }
 
     &__content {
@@ -46,20 +64,5 @@
 
     &__btn {
         margin: 15px 0 0;
-    }
-
-    a {
-        color: $white;
-        display: block;
-        height: 80vh;
-        padding: 40px 0;
-        text-decoration: none;
-        position: relative;
-        z-index: 3;
-
-        @include media-breakpoint-up(sm) {
-            height: 70vh;
-            max-height: 650px;
-        }
     }
 }

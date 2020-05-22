@@ -1,10 +1,10 @@
 <article class="game-item d-flex" style="background-image: url('{{game.image}}');">
-    <a href="{{ game.url }}" title="{{ game.title }} - Read the review" class="d-flex align-items-center align-items-lg-end">
+    <a href="{{ game.url }}" title="{{ game.title }} - Read the review" class="game-item__wrapper d-flex align-items-center align-items-lg-start">
         <span class="game-item__content">
             {% if game.revisited == true %}
                 <span class="game-item__badge badge badge-primary">Revisited</span>
             {% endif %}
-            <strong class="game-item__title h3">
+            <strong class="game-item__title h2">
                 <span class="reveal__holder" data-aos="reveal--item">
                     <span class="reveal__block right" data-aos="reveal--right"></span>
                     {{ game.title }}
