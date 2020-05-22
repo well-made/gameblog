@@ -1,0 +1,24 @@
+{%- if section.largeMedia != true -%}
+    {% capture modulus %}{{ forloop.index | modulo:2 }}{% endcapture %}
+    {% if modulus == "0" %}
+        {% assign contentClass = 'col-md-5 offset-md-1 order-md-2' %}
+        {% assign mediaClass = 'col-md-6 order-md-1' %}    
+    {% else %}
+        {% assign contentClass = 'col-md-5' %}
+        {% assign mediaClass = 'col-md-6 offset-md-1' %}
+    {% endif %}
+{%- else -%}
+    {% assign contentClass = 'col-12 order-2' %}
+    {% assign mediaClass = 'col-12 order-1' %}
+{%- endif -%}
+
+<div class="game-page__section">
+    <div class="row">
+        <div class="{{ contentClass }}">
+            {{ section.content | markdownify }}
+        </div>
+        <div class="{{ mediaClass }}">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/{{ section.videoid }}?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+    </div>
+</div>

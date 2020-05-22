@@ -1,20 +1,20 @@
-<header class="game-hero">
-    <div class="container">
-        <div class="game-hero__wrapper d-flex flex-row align-items-end align-items-md-center" style="background-image: url('{{ page.image }}')">
-            <div class="game-hero__content flex-fill">
-                <strong class="h1 game-hero__title">
+<div class="container">
+    <article class="hero d-flex" style="background-image: url('{{ hero.image }}')">
+        <div class="hero__wrapper d-flex flex-row align-items-end align-items-md-center" title="Read the review">
+            <div class="hero__content flex-fill">
+                <strong class="h1 hero__title">
                     <span class="reveal__holder" data-aos="reveal--item">
                         <span class="reveal__block right" data-aos="reveal--right"></span>
-                        {{ page.title }}
+                        {{ hero.title }}
                     </span>
                 </strong>
-                <p class="game-hero__summary">
+                <p class="hero__summary">
                     <span class="reveal__holder" data-aos="reveal--item">
                         <span class="reveal__block right" data-aos="reveal--right"></span>
-                        {{ page.summary }}
+                        {{ hero.summary }}
                     </span>
                 </p>
             </div>
         </div>
-    </div>
-</header>
+    </article>
+</div>
