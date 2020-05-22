@@ -4,7 +4,7 @@ layout: default
 
 <!-- Hero Game -->
 {% assign hero = site.posts.first %}
-{%- include games/hero.html -%}
+{%- include partials/hero/home.html -%}
 
 <!-- Recent Games -->
 <div class="container">
@@ -12,7 +12,7 @@ layout: default
     <div class="row">
       {% for game in site.posts offset:1 limit:2 %}
         <div class="col-lg-6 d-flex">
-          {%- include games/game.html -%}
+          {%- include partials/game/item.html -%}
         </div>
       {% endfor %}
     </div>
@@ -28,7 +28,7 @@ layout: default
       <div class="top-games__list-wrapper">
         <div class="top-games__list">
           {% for game in topgames %}
-            {%- include games/top-game.html -%}
+            {%- include partials/game/top-item.html -%}
           {% endfor %}
         </div>
       </div>
