@@ -32,6 +32,7 @@ permalink: /games/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - bootstrap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
