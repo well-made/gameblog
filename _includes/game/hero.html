@@ -1,44 +1,19 @@
 <header class="game-hero">
-    <div class="game-hero__wrapper d-flex flex-row align-items-end align-items-md-center" style="background-image: url('{{ page.image }}')">
-        <div class="game-hero__content flex-fill container">
-            <strong class="h1 game-hero__title">
-                <span class="reveal__holder" data-aos="reveal--item">
-                    <span class="reveal__block right" data-aos="reveal--right"></span>
-                    {{ page.title }}
-                </span>
-            </strong>
-            <p class="game-hero__summary">
-                <span class="reveal__holder" data-aos="reveal--item">
-                    <span class="reveal__block right" data-aos="reveal--right"></span>
-                    {{ page.summary }}
-                </span>
-            </p>
-        </div>
-    </div>
-
-    <div class="game-hero__info">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="game-hero__box">
-                        <img class="top-game__img img-fluid" src="{{ game.boxart }}" title="{{ game.title }}" alt="{{ game.title }}"/>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <ul class="game-hero__info-list list-unstyled">
-                        <li><strong>Playtime:</strong> 26 hours</li>
-                        <li><strong>Playtime:</strong> 26 hours</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <ul class="game-hero__info-list list-unstyled">
-                        <li><strong>Playtime:</strong> 26 hours</li>
-                        <li><strong>Playtime:</strong> 26 hours</li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                    
-                </div>
+    <div class="container">
+        <div class="game-hero__wrapper d-flex flex-row align-items-end align-items-md-center" style="background-image: url('{{ page.image }}')">
+            <div class="game-hero__content flex-fill">
+                <strong class="h1 game-hero__title">
+                    <span class="reveal__holder" data-aos="reveal--item">
+                        <span class="reveal__block right" data-aos="reveal--right"></span>
+                        {{ page.title }}
+                    </span>
+                </strong>
+                <p class="game-hero__summary">
+                    <span class="reveal__holder" data-aos="reveal--item">
+                        <span class="reveal__block right" data-aos="reveal--right"></span>
+                        {{ page.summary }}
+                    </span>
+                </p>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 body {
     background: $black;
     color: $white;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -12,5 +12,11 @@ body {
         @include media-breakpoint-up(md) {
             padding: 85px 0 0;
         }
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
     }
 }

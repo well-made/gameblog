@@ -1,19 +1,21 @@
-<article class="hero" style="background-image: url('{{ hero.image }}')">
-    <a href="{{ hero.url }}" class="d-flex flex-row align-items-end align-items-md-center" title="Read the review">
-        <div class="hero__content flex-fill container">
-            <strong class="h1 hero__title">
-                <span class="reveal__holder" data-aos="reveal--item">
-                    <span class="reveal__block right" data-aos="reveal--right"></span>
-                    {{ hero.title }}
-                </span>
-            </strong>
-            <p class="hero__summary">
-                <span class="reveal__holder" data-aos="reveal--item">
-                    <span class="reveal__block right" data-aos="reveal--right"></span>
-                    {{ hero.summary }}
-                </span>
-            </p>
-            <span class="btn hero__btn btn-primary">Read the review</span>
-        </div>
-    </a>
-</article>
+<div class="container">
+    <article class="hero" style="background-image: url('{{ hero.image }}')">
+        <a href="{{ hero.url }}" class="d-flex flex-row align-items-end align-items-md-center" title="Read the review">
+            <div class="hero__content flex-fill">
+                <strong class="h1 hero__title">
+                    <span class="reveal__holder" data-aos="reveal--item">
+                        <span class="reveal__block right" data-aos="reveal--right"></span>
+                        {{ hero.title }}
+                    </span>
+                </strong>
+                <p class="hero__summary">
+                    <span class="reveal__holder" data-aos="reveal--item">
+                        <span class="reveal__block right" data-aos="reveal--right"></span>
+                        {{ hero.summary }}
+                    </span>
+                </p>
+                <span class="btn hero__btn btn-primary">Read the review</span>
+            </div>
+        </a>
+    </article>
+</div>
